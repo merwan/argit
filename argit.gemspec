@@ -3,11 +3,11 @@ require File.join([File.dirname(__FILE__),'lib','argit','version.rb'])
 spec = Gem::Specification.new do |s| 
   s.name = 'argit'
   s.version = Argit::VERSION
-  s.author = 'Your Name Here'
-  s.email = 'your@email.address.com'
-  s.homepage = 'http://your.website.com'
+  s.author = 'Merouane Atig'
+  s.email = 'merouane.atig@gmail.com'
+  s.homepage = 'http://www.ammd.net'
   s.platform = Gem::Platform::RUBY
-  s.summary = 'A description of your project'
+  s.summary = 'Put your ardour project under version control'
 # Add your other files here if you make them
   s.files = %w(
 bin/argit
