@@ -11,7 +11,7 @@ end
 
 include GLI::App
 
-program_desc 'Describe your application here'
+program_desc 'Put your Ardour project under version control'
 
 version Argit::VERSION
 
@@ -23,7 +23,7 @@ default_value 'the default'
 arg_name 'The name of the argument'
 flag [:f,:flagname]
 
-desc 'Describe init here'
+desc 'Initialize current directory for version control'
 arg_name 'Describe arguments to init here'
 command :init do |c|
   c.desc 'Describe a switch to init'
@@ -43,7 +43,7 @@ command :init do |c|
   end
 end
 
-desc 'Describe save here'
+desc 'Save the current files for your Ardour project'
 arg_name 'Describe arguments to save here'
 command :save do |c|
   c.action do |global_options,options,args|
