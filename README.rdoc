@@ -1,0 +1,6 @@
+= argit
+
+Describe your project here
+
+:include:argit.rdoc
+
