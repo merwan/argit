@@ -39,7 +39,8 @@ command :init do |c|
     # If you have any errors, just raise them
     # raise "that command made no sense"
 
-    puts "init command ran"
+    puts "Initializing current folder for Argit"
+    Argit::Commands::Init.create_repository
   end
 end
 
