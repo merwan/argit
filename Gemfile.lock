@@ -2,6 +2,7 @@ PATH
   remote: .
   specs:
     argit (0.0.1)
+      git
       gli (= 2.0.0)
 
 GEM
@@ -24,6 +25,7 @@ GEM
     ffi (1.1.5)
     gherkin (2.11.2)
       json (>= 1.4.6)
+    git (1.2.5)
     gli (2.0.0)
     json (1.7.5)
     rake (0.9.2.2)

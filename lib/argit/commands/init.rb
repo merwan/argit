@@ -1,10 +1,10 @@
-require 'fileutils'
+require 'git'
 
 module Argit
   module Commands
     class Init
       def self.create_repository
-         FileUtils.mkdir '.git'
+        Git.init
       end
     end
   end
