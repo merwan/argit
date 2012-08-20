@@ -48,7 +48,8 @@ desc 'Save the current files for your Ardour project'
 arg_name 'Describe arguments to save here'
 command :save do |c|
   c.action do |global_options,options,args|
-    puts "save command ran"
+    puts "Saving current project"
+    Argit::Commands::Save.add_files
   end
 end
 

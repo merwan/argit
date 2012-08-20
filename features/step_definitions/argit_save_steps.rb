@@ -1,16 +1,8 @@
-require 'fileutils'
-require 'git'
+require 'aruba/process'
 
-Given /^the project is initialized with argit init$/ do
-  `argit init`
-end
-
-Given /^I have an empty Ardour project file called "(.*?)"$/ do |filename|
-  FileUtils.touch File.join(ENV['HOME'], filename)
-end
-
-Then /^the git repository contains "(.*?)" file$/ do |filename|
-  repository = Git.open('.')
-  repository.ls_files[filename].should_not == nil
+Then /^the git repository should contain "(.+)"$/ do |filename|
+  cmd = 'git ls-files'
+  process = Process.new(cmd, 3, 0.1)
+  process.run!.output(@aruba_keep_ansi).should include filename
 end
 
